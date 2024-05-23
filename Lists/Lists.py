@@ -1,5 +1,5 @@
 # Q1 Sum of Natural Numbers
-'''def natural_sum(num):
+def natural_sum(num):
     count = 0
     sum = 0
     while(count <= num):
@@ -124,7 +124,7 @@ l=[1,2,3,4,5,6,7,8,9]
 d=3                       #Method 1
 l=l[d:]+l[0:d]
 print(l)
-'''
+
 
 l=[1,2,3,4,5,6]
 d=2

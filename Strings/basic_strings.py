@@ -1,4 +1,4 @@
-'''str1="ashish"
+str1="ashish"
 print(str1[2:5])          #string slicing
 newstr1="".join(reversed(str1))                #reversing a string method 1
 print(newstr1)
@@ -56,6 +56,6 @@ def anagrams(str1,str2):
 
 print(anagrams("silent","listen"))
 
-'''
+
 
 
