@@ -30,10 +30,29 @@ def insertatend(head,data):
         curr=curr.next
     curr.next=new_node
 
+#Insert at Given Position
+def givenpos(head,data,pos):
+    new_node=Node(data)
+    curr = head
+    if pos == 1:
+        new_node.next=head
+        head=new_node
+        return head
+    for i in range(pos-2):
+        curr=curr.next
+        if curr == None:
+            return head
+    new_node.next=curr.next
+    curr.next=new_node
+    return new_node
+        
+
 
 # Calling all function here
 print(printList(head))
 head=InsertionatBegining(head,1000)
 print(printList(head))
 insertatend(head,2000)
+print(printList(head))
+givenpos(head,3000,3)
 print(printList(head))
