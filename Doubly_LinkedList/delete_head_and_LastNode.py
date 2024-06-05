@@ -29,8 +29,22 @@ def delete_headNode(head):
         head.prev=None
         return head
 
+def delete_LastNode(head):
+    curr=head
+    
+    while curr.next.next != None:
+        curr=curr.next
+    curr.next=None
+    return head
+    
+
 printList(head)
 
 head=delete_headNode(head)
 
 printList(head)
+
+head=delete_LastNode(head)
+
+printList(head)
+
